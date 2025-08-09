@@ -58,6 +58,9 @@ Upload index.html to the bucket.
 
 Add Bucket Policy to make files public:
 
+#### Bucket Policy
+Go to **Permissions → Bucket Policy** and paste the following JSON:
+
 ```json
 {
   "Version": "2012-10-17",
@@ -71,6 +74,8 @@ Add Bucket Policy to make files public:
     }
   ]
 }
+
+
 Save and note the S3 website URL.
 
 2. Create the DynamoDB Table
