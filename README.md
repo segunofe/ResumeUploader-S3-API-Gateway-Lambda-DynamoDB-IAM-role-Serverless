@@ -6,23 +6,27 @@ It uses:
 S3 — to host the frontend and store uploaded resumes.
 <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/c9633434-3cfb-4847-9208-485907cdbe67" />
 
-<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/c649a52d-7526-44a2-beea-27d4732f27a7" />
+<img width="1920" height="662" alt="Screenshot 2025-08-09 001127" src="https://github.com/user-attachments/assets/88a9f5eb-cc69-417d-84e8-52dd6894a03a" />
+
 
 
 DynamoDB — to store applicant details.
 
-<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/6924385b-e652-43f6-ab09-7164f52e534a" />
+<img width="1920" height="967" alt="Screenshot 2025-08-09 001150" src="https://github.com/user-attachments/assets/a7714428-9eae-46ae-a396-e01d0ce6eb3c" />
+
 
 
 Lambda — to process file uploads.
 
-<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/cf4f176e-f06e-4d8a-9000-f2e041457896" />
+<img width="1920" height="920" alt="Screenshot 2025-08-09 001238" src="https://github.com/user-attachments/assets/65bc014f-3ab1-4b4d-bfc1-d7951f5c9fb4" />
+
 
 
 API Gateway — to expose the Lambda function as an API.
 
 
-<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/c03f0bd6-c56d-4465-ab30-02e3dd588aad" />
+<img width="1920" height="862" alt="Screenshot 2025-08-09 001249" src="https://github.com/user-attachments/assets/8a1034fb-76ea-43a0-873d-e1d5b9b574c7" />
+
 
 CORS — to allow cross-origin requests from the frontend.
 
@@ -38,7 +42,7 @@ DynamoDB table named applicants stores applicant name, email, filename, and time
 
 CORS enabled at both the stage (prod) and /upload resource level.
 
-Setup Instructions
+ ### Setup Instructions
 1. Create an S3 Bucket for the Frontend
 Go to S3 Console → Create bucket:
 
@@ -47,10 +51,6 @@ Bucket name: new-resume123 (replace with your own, must be globally unique).
 Region: us-east-1 (or your preferred).
 
 Disable Block Public Access.
-
-Enable Static Website Hosting:
-
-Properties → Static website hosting → Enable.
 
 Index document: index.html.
 
