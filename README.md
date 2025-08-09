@@ -153,9 +153,7 @@ https://<api-id>.execute-api.us-east-1.amazonaws.com/prod/upload
 6. Update index.html
 In your JavaScript fetch call, replace the URL with your API Gateway /upload endpoint:
 
-javascript
-Copy
-Edit
+```
 const res = await fetch(
   "https://<api-id>.execute-api.us-east-1.amazonaws.com/prod/upload",
   {
@@ -163,6 +161,8 @@ const res = await fetch(
     body: formData,
   }
 );
+```
+
 7. Test the Application
 Open the S3 website URL in your browser.
 
