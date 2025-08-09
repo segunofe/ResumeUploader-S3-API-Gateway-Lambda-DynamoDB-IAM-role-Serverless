@@ -43,7 +43,7 @@ DynamoDB table named applicants stores applicant name, email, filename, and time
 CORS enabled at both the stage (prod) and /upload resource level.
 
  ### Setup Instructions
-1. Create an S3 Bucket for the Frontend
+## 1. Create an S3 Bucket for the Frontend
 Go to S3 Console → Create bucket:
 
 Bucket name: new-resume123 (replace with your own, must be globally unique).
@@ -78,7 +78,7 @@ Go to **Permissions → Bucket Policy** and paste the following JSON:
 
 Save and note the S3 website URL.
 
-2. Create the DynamoDB Table
+## 2. Create the DynamoDB Table
 Go to DynamoDB Console → Create table.
 
 Table name: applicants.
@@ -87,7 +87,7 @@ Partition key: id (String).
 
 Leave other settings as default, click Create table.
 
-3. Create the Lambda Function
+## 3. Create the Lambda Function
 Go to Lambda Console → Create function:
 
 Name: resumeUploader.
@@ -102,8 +102,8 @@ Set Environment Variables if needed.
 
 Click Deploy.
 
-4. Create an API Gateway REST API
-Go to API Gateway Console → Create API → REST API.
+## 4. Create an API Gateway REST API
+ ### Go to API Gateway Console → Create API → REST API.
 
 Name it ResumeUploaderAPI.
 
@@ -133,23 +133,21 @@ Enable CORS for the prod stage:
 
 After deploying (next step), go to Stage settings and enable CORS.
 
-5. Deploy the API
+## 5. Deploy the API
 Go to Actions → Deploy API.
 
 Stage name: prod.
 
 Copy the Invoke URL:
 
-arduino
-Copy
-Edit
+```
 https://<api-id>.execute-api.us-east-1.amazonaws.com/prod
+```
 Your /upload endpoint will be:
 
-arduino
-Copy
-Edit
+```
 https://<api-id>.execute-api.us-east-1.amazonaws.com/prod/upload
+```
 6. Update index.html
 In your JavaScript fetch call, replace the URL with your API Gateway /upload endpoint:
 
@@ -163,7 +161,7 @@ const res = await fetch(
 );
 ```
 
-7. Test the Application
+## 7. Test the Application
 Open the S3 website URL in your browser.
 
 Fill in name, email, and upload a file.
@@ -176,7 +174,7 @@ Metadata stored in applicants DynamoDB table.
 
 Success message returned in browser.
 
-8. Security Notes
+## 8. Security Notes
 Never expose AWS credentials in the frontend.
 
 Use IAM roles for Lambda instead of hardcoding keys.
