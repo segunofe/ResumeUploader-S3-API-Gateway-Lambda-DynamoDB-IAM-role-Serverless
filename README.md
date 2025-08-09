@@ -58,9 +58,7 @@ Upload index.html to the bucket.
 
 Add Bucket Policy to make files public:
 
-json
-Copy
-Edit
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
