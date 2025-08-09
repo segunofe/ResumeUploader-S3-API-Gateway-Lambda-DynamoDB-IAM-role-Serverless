@@ -74,7 +74,7 @@ Go to **Permissions → Bucket Policy** and paste the following JSON:
     }
   ]
 }
-
+```
 
 Save and note the S3 website URL.
 
