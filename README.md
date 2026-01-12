@@ -3,26 +3,26 @@
 # This project is a simple serverless application for uploading resumes via a web form.
 It uses:
 
-S3 — to host the frontend and store uploaded resumes.
+# S3 — to host the frontend and store uploaded resumes.
 <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/c9633434-3cfb-4847-9208-485907cdbe67" />
 
 <img width="1920" height="662" alt="Screenshot 2025-08-09 001127" src="https://github.com/user-attachments/assets/88a9f5eb-cc69-417d-84e8-52dd6894a03a" />
 
 
 
-DynamoDB — to store applicant details.
+# DynamoDB — to store applicant details.
 
 <img width="1920" height="967" alt="Screenshot 2025-08-09 001150" src="https://github.com/user-attachments/assets/a7714428-9eae-46ae-a396-e01d0ce6eb3c" />
 
 
 
-Lambda — to process file uploads.
+# Lambda — to process file uploads.
 
 <img width="1920" height="920" alt="Screenshot 2025-08-09 001238" src="https://github.com/user-attachments/assets/65bc014f-3ab1-4b4d-bfc1-d7951f5c9fb4" />
 
 
 
-API Gateway — to expose the Lambda function as an API.
+# API Gateway — to expose the Lambda function as an API.
 
 
 <img width="1920" height="862" alt="Screenshot 2025-08-09 001249" src="https://github.com/user-attachments/assets/8a1034fb-76ea-43a0-873d-e1d5b9b574c7" />
