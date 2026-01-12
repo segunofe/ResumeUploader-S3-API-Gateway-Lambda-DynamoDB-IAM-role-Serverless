@@ -1,6 +1,6 @@
 # Resume Uploader (S3 + API Gateway + Lambda + DynamoDB)
 
-This project is a simple serverless application for uploading resumes via a web form.
+# This project is a simple serverless application for uploading resumes via a web form.
 It uses:
 
 S3 — to host the frontend and store uploaded resumes.
